@@ -47,6 +47,13 @@
             to { opacity: 1; transform: translateY(0); }
         }
         .reveal { animation: fadeInUp 1s ease-out forwards; }
+        
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+        }
     </style>
 </head>
 <body class="selection:bg-blue-500 selection:text-white">
@@ -62,7 +69,7 @@
                 <a href="#projects" class="hover:text-blue-400 transition-colors">İçerikler</a>
                 <a href="#contact" class="hover:text-blue-400 transition-colors">İletişim</a>
             </div>
-            <!-- CV LİNKİ - DOĞRUDAN GOOGLE DRIVE -->
+            <!-- CV LİNKİ -->
             <a href="https://drive.google.com/file/d/1NuztaNIjIEt81ZQf7jJ3DKbp_lfBq7b-/view?usp=sharing" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-xl text-xs font-bold transition-all shadow-lg shadow-blue-900/40">
                 Özgeçmiş İndir
             </a>
@@ -90,7 +97,6 @@
                 <a href="#projects" class="bg-white text-black px-12 py-5 rounded-2xl font-bold hover:bg-blue-500 hover:text-white transition-all duration-500 text-sm uppercase tracking-widest shadow-2xl">
                     Haberlerimi Gör
                 </a>
-                <!-- CV LİNKİ - DOĞRUDAN GOOGLE DRIVE -->
                 <a href="https://drive.google.com/file/d/1NuztaNIjIEt81ZQf7jJ3DKbp_lfBq7b-/view?usp=sharing" target="_blank" class="glass px-12 py-5 rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-white/5 transition-all">
                     Özgeçmişimi Görüntüle
                 </a>
@@ -103,7 +109,7 @@
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row items-end justify-between mb-24 gap-6">
                 <div class="max-w-md">
-                    <h2 class="text-4xl md:text-5xl font-black mb-6">Öne Çıkanlar</h2>
+                    <h2 class="text-4xl md:text-5xl font-black mb-6 text-white">Öne Çıkanlar</h2>
                     <p class="text-gray-500 text-sm">Teknoyuz.com bünyesinde hazırladığım en güncel ve ilgi gören içerikler.</p>
                 </div>
                 <div class="hidden md:block h-px flex-1 bg-white/5 mx-12"></div>
@@ -111,30 +117,28 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Haber 1: Xbox Game Pass -->
+                <!-- Haber 1: Xbox -->
                 <article class="hover-card glass rounded-[40px] overflow-hidden group">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="https://teknoyuz.com/wp-content/uploads/2024/05/xbox-game-pass-mayis-2025-oyunlari.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="Xbox Game Pass">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#010411] via-transparent to-transparent opacity-90"></div>
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://teknoyuz.com/wp-content/uploads/2024/05/xbox-game-pass-mayis-2025-oyunlari.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="Xbox" onerror="this.src='https://via.placeholder.com/600x400?text=Xbox+Haber'">
                     </div>
                     <div class="p-8 pt-4">
                         <span class="text-blue-400 text-[9px] font-black uppercase tracking-widest mb-3 block">Oyun Haberi</span>
-                        <h3 class="text-xl font-bold mb-4 group-hover:text-blue-400 transition-colors leading-snug line-clamp-2">Xbox Game Pass Mayıs 2025 Oyunları</h3>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-blue-400 transition-colors leading-snug line-clamp-2 text-white">Xbox Game Pass Mayıs 2025 Oyunları Duyuruldu</h3>
                         <a href="https://teknoyuz.com/xbox-game-pass-mayis-2025-oyunlari-the-division-2-ve-daha-fazlasi/" target="_blank" class="inline-flex items-center text-[10px] font-black uppercase tracking-widest text-white/50 group-hover:text-blue-400 transition-all">
                             Oku <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
                 </article>
 
-                <!-- Haber 2: Xiaomi YU7 -->
+                <!-- Haber 2: Xiaomi -->
                 <article class="hover-card glass rounded-[40px] overflow-hidden group">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="https://teknoyuz.com/wp-content/uploads/2024/05/xiaomi-yu7-suv-modeli.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="Xiaomi YU7">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#010411] via-transparent to-transparent opacity-90"></div>
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://teknoyuz.com/wp-content/uploads/2024/05/xiaomi-yu7-suv-modeli.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="Xiaomi" onerror="this.src='https://via.placeholder.com/600x400?text=Xiaomi+Haber'">
                     </div>
                     <div class="p-8 pt-4">
-                        <span class="text-green-400 text-[9px] font-black uppercase tracking-widest mb-3 block">Otomobil & Teknoloji</span>
-                        <h3 class="text-xl font-bold mb-4 group-hover:text-green-400 transition-colors leading-snug line-clamp-2">Xiaomi YU7 SUV Modeli Duyuruldu</h3>
+                        <span class="text-green-400 text-[9px] font-black uppercase tracking-widest mb-3 block">Otomobil</span>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-green-400 transition-colors leading-snug line-clamp-2 text-white">Xiaomi YU7 SUV Modeli Resmen Duyuruldu</h3>
                         <a href="https://teknoyuz.com/xiaomi-yu7-suv-modeli-resmen-duyuruldu/" target="_blank" class="inline-flex items-center text-[10px] font-black uppercase tracking-widest text-white/50 group-hover:text-green-400 transition-all">
                             Oku <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -143,14 +147,41 @@
 
                 <!-- Haber 3: GTA 6 -->
                 <article class="hover-card glass rounded-[40px] overflow-hidden group">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="https://teknoyuz.com/wp-content/uploads/2024/05/gta-6-nintendo-switch-2.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="GTA 6">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#010411] via-transparent to-transparent opacity-90"></div>
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://teknoyuz.com/wp-content/uploads/2024/05/gta-6-nintendo-switch-2.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="GTA 6" onerror="this.src='https://via.placeholder.com/600x400?text=GTA6+Haber'">
                     </div>
                     <div class="p-8 pt-4">
-                        <span class="text-red-400 text-[9px] font-black uppercase tracking-widest mb-3 block">Sızıntı & Haber</span>
-                        <h3 class="text-xl font-bold mb-4 group-hover:text-red-400 transition-colors leading-snug line-clamp-2">GTA 6 Nintendo Switch 2'ye Gelecek mi?</h3>
+                        <span class="text-red-400 text-[9px] font-black uppercase tracking-widest mb-3 block">Sızıntı</span>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-red-400 transition-colors leading-snug line-clamp-2 text-white">GTA 6 Nintendo Switch 2'ye Gelecek mi?</h3>
                         <a href="https://teknoyuz.com/gta-6-nintendo-switch-2ye-gelecek-mi-take-twodan-belirsiz-aciklama/" target="_blank" class="inline-flex items-center text-[10px] font-black uppercase tracking-widest text-white/50 group-hover:text-red-400 transition-all">
+                            Oku <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Haber 4: AMD -->
+                <article class="hover-card glass rounded-[40px] overflow-hidden group">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://teknoyuz.com/wp-content/uploads/2024/05/amd-radeon-rx-9060-xt.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="AMD" onerror="this.src='https://via.placeholder.com/600x400?text=AMD+Haber'">
+                    </div>
+                    <div class="p-8 pt-4">
+                        <span class="text-blue-400 text-[9px] font-black uppercase tracking-widest mb-3 block">Donanım</span>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-blue-400 transition-colors leading-snug line-clamp-2 text-white">AMD Radeon RX 9060 XT Tanıtıldı</h3>
+                        <a href="https://teknoyuz.com/amd-radeon-rx-9060-xt-tanitildi/" target="_blank" class="inline-flex items-center text-[10px] font-black uppercase tracking-widest text-white/50 group-hover:text-blue-400 transition-all">
+                            Oku <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Haber 5: Google Veo -->
+                <article class="hover-card glass rounded-[40px] overflow-hidden group">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://teknoyuz.com/wp-content/uploads/2024/05/google-veo-3.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="Google Veo" onerror="this.src='https://via.placeholder.com/600x400?text=Google+Veo'">
+                    </div>
+                    <div class="p-8 pt-4">
+                        <span class="text-purple-400 text-[9px] font-black uppercase tracking-widest mb-3 block">Yapay Zeka</span>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-purple-400 transition-colors leading-snug line-clamp-2 text-white">Google Veo 3: Video Üretiminde Yeni Çağ</h3>
+                        <a href="https://teknoyuz.com/google-sesli-videolar-uretebilen-yapay-zeka-destekli-veo-3u-tanitti/" target="_blank" class="inline-flex items-center text-[10px] font-black uppercase tracking-widest text-white/50 group-hover:text-purple-400 transition-all">
                             Oku <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -159,7 +190,7 @@
 
             <!-- Arşiv Linki -->
             <div class="mt-24 text-center">
-                <a href="https://teknoyuz.com/author/arda-sen/" target="_blank" class="inline-flex items-center gap-4 px-10 py-5 glass rounded-2xl hover:bg-white hover:text-black transition-all duration-700 font-bold text-xs uppercase tracking-[0.3em] group">
+                <a href="https://teknoyuz.com/author/arda-sen/" target="_blank" class="inline-flex items-center gap-4 px-10 py-5 glass rounded-2xl hover:bg-white hover:text-black transition-all duration-700 font-bold text-xs uppercase tracking-[0.3em] group text-white">
                     <i class="fas fa-layer-group opacity-40 group-hover:scale-125 transition-transform"></i>
                     Tüm Yazarlar Arşivim
                 </a>
@@ -170,26 +201,23 @@
     <!-- İletişim Bölümü -->
     <footer id="contact" class="py-32 border-t border-white/5 bg-[#020617]">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-5xl font-black mb-12 tracking-tight">Yeni Bir Proje?<br><span class="text-blue-500">Hemen Yazın.</span></h2>
+            <h2 class="text-5xl font-black mb-12 tracking-tight text-white">Birlikte Çalışalım mı?<br><span class="text-blue-500">Hemen Yazın.</span></h2>
             
             <div class="flex flex-wrap justify-center gap-8 mb-20">
                 <a href="mailto:ardasen68@gmail.com" class="w-20 h-20 glass flex items-center justify-center rounded-[2rem] hover:bg-blue-600 hover:-translate-y-3 transition-all duration-500 shadow-2xl group">
-                    <i class="fas fa-envelope text-2xl group-hover:scale-110"></i>
+                    <i class="fas fa-envelope text-2xl group-hover:scale-110 text-white"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/ardasen1306/" target="_blank" class="w-20 h-20 glass flex items-center justify-center rounded-[2rem] hover:bg-[#0077b5] hover:-translate-y-3 transition-all duration-500 shadow-2xl group">
-                    <i class="fab fa-linkedin-in text-2xl group-hover:scale-110"></i>
+                    <i class="fab fa-linkedin-in text-2xl group-hover:scale-110 text-white"></i>
                 </a>
                 <a href="https://www.instagram.com/arda.sn13/" target="_blank" class="w-20 h-20 glass flex items-center justify-center rounded-[2rem] hover:bg-gradient-to-tr from-orange-500 to-pink-600 hover:-translate-y-3 transition-all duration-500 shadow-2xl group">
-                    <i class="fab fa-instagram text-2xl group-hover:scale-110"></i>
+                    <i class="fab fa-instagram text-2xl group-hover:scale-110 text-white"></i>
                 </a>
             </div>
             
             <div class="pt-10 space-y-6">
                 <p class="text-gray-600 text-xs font-mono tracking-widest uppercase">
                     &copy; 2026 ARDA ŞEN | LITERARY PRECISION & TECH INNOVATION
-                </p>
-                <p class="text-gray-800 text-[9px] uppercase tracking-[0.5em] font-black">
-                    Built with Excellence
                 </p>
             </div>
         </div>
